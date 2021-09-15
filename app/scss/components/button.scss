@@ -1,0 +1,18 @@
+.button {
+  padding: 10px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px;
+  border-radius: 3px;
+  &--primary {
+    background: linear-gradient(
+      to left,
+      var(--gradiant-start),
+      var(--gradiant-end)
+    );
+  }
+  &--secondary {
+    background-color: var(--button-dark);
+  }
+}

@@ -1,0 +1,47 @@
+@use '../util' as *;
+
+.nav {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+  justify-content: space-between;
+  font-size: 14px;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 170px;
+    &--img {
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  &__item {
+    margin-right: 50px;
+    cursor: pointer;
+    &:hover {
+      color: var(--secondary);
+    }
+    &--active {
+      color: var(--secondary);
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+}

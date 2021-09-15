@@ -1,0 +1,11 @@
+.phone {
+  &__img {
+    position: absolute;
+    width: 60%;
+    top: 60px;
+    right: 10px;
+    img {
+      width: 100%;
+    }
+  }
+}
