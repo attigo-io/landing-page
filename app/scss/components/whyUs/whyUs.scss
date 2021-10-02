@@ -1,0 +1,100 @@
+.why-us-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  &__text {
+    width: 60%;
+    text-align: center;
+    &--subtitle {
+      color: #4f5882;
+      font-weight: 300;
+      font-size: 28px;
+    }
+    &--title {
+      color: #ff7f01;
+      font-size: 48px;
+      font-weight: 600;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 300px;
+      margin: auto;
+      .img-container {
+        height: 70px;
+        width: 140px;
+        position: absolute;
+        left: 130px;
+        background: #10121c;
+        display: flex;
+        align-items: center;
+        img {
+          height: 70%;
+          transform: rotate(-90deg);
+        }
+      }
+      span {
+        color: white;
+        font-family: 'Galano Grotesque';
+        font-weight: bold;
+        font-size: 52px;
+        margin-left: 10px;
+      }
+    }
+    &--text {
+      color: white;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+  &__cardscontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 320px 320px 320px;
+    &--col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__card {
+    background-color: #2a2e43;
+    width: 280px;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    &--icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      aspect-ratio: 1;
+      border-radius: 20px;
+      padding: 20px;
+      width: 50px;
+      background: red;
+      img {
+        transform: scale(1.2);
+      }
+    }
+    &--title {
+      color: white;
+      margin-top: 15px;
+      font-weight: 500;
+      font-size: 18px;
+    }
+    &--text {
+      font-size: 12px;
+      font-weight: 300px;
+      color: white;
+      opacity: 0.7;
+      margin-bottom: 50px;
+    }
+  }
+}

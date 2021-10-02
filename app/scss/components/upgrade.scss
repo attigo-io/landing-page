@@ -1,0 +1,39 @@
+.upgrade-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__card{
+        width: 80%;
+        padding: 30px 50px;
+        border-radius:10px ;
+        background: #313457;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        &--title{
+            color: white;
+            font-size: 38px;
+            width: 30%;
+            color: #FF7F01;
+            span{
+                color: white;
+                font-size: 42px;
+                font-weight: 700;
+                font-family: 'Galano Grotesque';
+
+            }
+        }
+    }
+    &__buttons{
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__button{
+        margin-top: 20px;
+        padding: 10px 35px ;
+        background: #FF8E00;
+        border-radius: 4px;
+        color: white;
+    }
+}
