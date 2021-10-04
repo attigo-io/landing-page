@@ -1,6 +1,15 @@
+@use '../util/' as * ;
 .main {
   width: 40%;
   margin-top: 50px;
+  @include breakpoint-down(small){
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
   &__title {
     color: white;
     &--small {
@@ -29,5 +38,10 @@
   &__buttons {
     display: flex;
     justify-content: space-around;
+    @include breakpoint-down(small){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

@@ -7,6 +7,9 @@
   padding: 20px 0;
   justify-content: space-between;
   font-size: 20px;
+  @include breakpoint-down(small){
+    display: none ;
+  }
 
   &__left {
     display: flex;
