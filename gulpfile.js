@@ -33,6 +33,7 @@ function jsTask() {
 		.pipe(dest('dist', { sourcemaps: '.' }));
 }
 
+
 // Browsersync
 function browserSyncServe(cb) {
 	browsersync.init({
@@ -64,3 +65,4 @@ function watchTask() {
 
 // Default Gulp Task
 exports.default = series(scssTask, htmlMin, jsTask, browserSyncServe, watchTask);
+exports.build = series(scssTask, htmlMin, jsTask);
