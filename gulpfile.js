@@ -7,6 +7,7 @@ const cssnano = require('cssnano');
 const babel = require('gulp-babel');
 const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
+const htmlmin = require('gulp-htmlmin');
 
 // Sass Task
 function scssTask() {
@@ -15,6 +16,14 @@ function scssTask() {
 		.pipe(postcss([autoprefixer(), cssnano()]))
 		.pipe(dest('dist', { sourcemaps: '.' }));
 }
+
+// html minify
+function htmlMin(){
+	return src('*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest('dist'));
+}
+
 
 // JavaScript Task
 function jsTask() {
@@ -28,7 +37,7 @@ function jsTask() {
 function browserSyncServe(cb) {
 	browsersync.init({
 		server: {
-			baseDir: '.',
+			baseDir: './dist',
 		},
 		notify: {
 			styles: {
@@ -54,4 +63,4 @@ function watchTask() {
 }
 
 // Default Gulp Task
-exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+exports.default = series(scssTask, htmlMin, jsTask, browserSyncServe, watchTask);
