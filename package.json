@@ -6,7 +6,7 @@
   "author": "Abdou Bentegar",
   "license": "ISC",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp build"
   },
   "dependencies": {
     "@babel/core": "^7.14.8",
