@@ -1,11 +1,12 @@
-@use '../util/' as * ;
+@use '../util/' as *;
 .phone {
   &__img {
     position: absolute;
-    width: 60%;
-    top: 60px;
+    z-index: 10;
+    width: 80%;
+    top: 120px;
     right: 10px;
-    @include breakpoint-down(small){
+    @include breakpoint-down(small) {
       display: none;
     }
     img {

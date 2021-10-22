@@ -1,39 +1,90 @@
-.upgrade-section{
+.upgrade-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  position: relative;
+  &__underlay {
+    position: absolute;
+  }
+  &__dots1 {
+    position: absolute;
+    top: -150px;
+    left: 10px;
+    transform: scale(1.1);
+  }
+  &__dots2 {
+    position: absolute;
+    bottom: -150px;
+    right: 10px;
+    transform: scale(1.1);
+  }
+  &__card {
+    position: relative;
+    width: 80%;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background: #313457;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__card{
-        width: 80%;
-        padding: 30px 50px;
-        border-radius:10px ;
-        background: #313457;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        &--title{
-            color: white;
-            font-size: 38px;
-            width: 30%;
-            color: #FF7F01;
-            span{
-                color: white;
-                font-size: 42px;
-                font-weight: 700;
-                font-family: 'Galano Grotesque';
-
-            }
-        }
+    justify-content: flex-start;
+    &--underlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      img {
+        width: 100%;
+      }
     }
-    &__buttons{
-        display: flex;
-        justify-content: flex-start;
+    &--dots {
+      position: absolute;
+      right: 10px;
+      bottom: -25px;
+      transform: scale(0.7);
     }
-    &__button{
-        margin-top: 20px;
-        padding: 10px 35px ;
-        background: #FF8E00;
-        border-radius: 4px;
+    &--coin1 {
+      position: absolute;
+      transform: scale(0.7);
+      top: -180px;
+      right: 10px;
+    }
+    &--coin2 {
+      position: absolute;
+      transform: scale(0.7);
+      top: 10px;
+      right: 150px;
+    }
+    &--coin3 {
+      position: absolute;
+      transform: scale(0.7);
+      bottom: 40px;
+      right: 60px;
+    }
+    &--title {
+      color: white;
+      font-size: 38px;
+      width: 30%;
+      color: #ff7f01;
+      span {
         color: white;
+        font-size: 42px;
+        font-weight: 700;
+        font-family: 'Galano Grotesque';
+      }
     }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__button {
+    margin-top: 20px;
+    padding: 10px 35px;
+    background: #ff8e00;
+    border-radius: 4px;
+    color: white;
+  }
 }

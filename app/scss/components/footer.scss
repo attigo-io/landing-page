@@ -1,0 +1,47 @@
+.footer {
+  background: white;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 4fr 3fr 3fr;
+  padding: 50px 50px 200px 50px;
+  z-index: 100;
+  position: relative;
+  color: #1c1e2c;
+  &__logo {
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+  &__text {
+    margin-left: 70px;
+    font-weight: 300;
+    opacity: 0.9;
+  }
+  &__center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &--header {
+      font-size: 24px;
+      font-weight: 500;
+      height: 68px;
+    }
+    &--links {
+      opacity: 0.9;
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    &--link {
+      margin-bottom: 10px;
+      list-style: none;
+      margin-left: 0;
+      font-size: 16px;
+      font-weight: 300;
+      a {
+        color: #1c1e2c;
+      }
+    }
+  }
+}

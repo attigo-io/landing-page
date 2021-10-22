@@ -19,3 +19,12 @@ body {
   overflow: hidden !important;
   background-color: var(--background);
 }
+a,
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+link {
+  text-decoration: none !important;
+}

@@ -56,10 +56,10 @@ function browserSyncReload(cb) {
 
 // Watch Task
 function watchTask() {
-	watch('*.html', browserSyncReload);
+	watch('*.html',series(htmlMin, browserSyncReload));
 	watch(
 		['app/scss/**/*.scss', 'app/**/*.js'],
-		series(scssTask, jsTask, browserSyncReload)
+		series(scssTask, jsTask, htmlMin, browserSyncReload)
 	);
 }
 
