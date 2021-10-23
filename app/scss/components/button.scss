@@ -1,4 +1,4 @@
-@use '../util/' as * ;
+@use '../util/' as *;
 .button {
   padding: 10px 35px;
   display: flex;
@@ -7,10 +7,9 @@
   margin-right: 35px;
   border-radius: 3px;
   color: white;
-  @include breakpoint-down(small){
+  @include breakpoint-down(medium) {
     margin: 10px auto;
     width: 100%;
-    
   }
   &--primary {
     background: linear-gradient(

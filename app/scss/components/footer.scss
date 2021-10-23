@@ -9,11 +9,11 @@
   z-index: 100;
   position: relative;
   color: #1c1e2c;
-  @include breakpoint-down(small) {
+  @include breakpoint-down(medium) {
     grid-template-columns: 1fr;
   }
   &__left {
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       display: flex;
       flex-direction: column;
       margin-bottom: 50px;
@@ -21,7 +21,7 @@
   }
   &__logo {
     width: 30%;
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       width: 90%;
     }
     img {
@@ -32,7 +32,7 @@
     margin-left: 70px;
     font-weight: 300;
     opacity: 0.9;
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       margin-left: 0;
     }
   }
@@ -44,7 +44,7 @@
       font-size: 24px;
       font-weight: 500;
       height: 68px;
-      @include breakpoint-down(small) {
+      @include breakpoint-down(medium) {
         height: auto;
         margin-bottom: 20px;
         text-align: center;
@@ -62,7 +62,7 @@
       margin-left: 0;
       font-size: 16px;
       font-weight: 300;
-      @include breakpoint-down(small) {
+      @include breakpoint-down(medium) {
         text-align: center;
       }
       a {

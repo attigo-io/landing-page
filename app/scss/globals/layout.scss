@@ -10,15 +10,14 @@
     padding: 0;
     transform: translate(0, 0);
   }
-  @include breakpoint-down(small){
+  @include breakpoint-down(medium) {
     padding: 10px;
   }
 }
 
-
-.hero-section{
+.hero-section {
   height: 90vh;
-  @include breakpoint-down(small){
+  @include breakpoint-down(medium) {
     height: 80vh;
   }
 }

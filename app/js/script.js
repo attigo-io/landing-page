@@ -188,4 +188,4 @@ const animatePhone = () => {
 }
 
 
-screen.width > 640 ? animatePC() : animatePhone()
+screen.width > 1055 ? animatePC() : animatePhone()
