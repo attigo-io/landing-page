@@ -189,3 +189,9 @@ const animatePhone = () => {
 
 
 screen.width > 1055 ? animatePC() : animatePhone()
+
+
+const toggleMenu = () => {
+	const nav = document.getElementById('nav')
+	nav.classList.toggle('nav--open');
+}

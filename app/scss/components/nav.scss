@@ -7,8 +7,27 @@
   padding: 20px 0;
   justify-content: space-between;
   font-size: 20px;
+  transition: 300ms ease-in height;
   @include breakpoint-down(medium) {
+    flex-direction: column;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  &--open {
+    height: 250px;
+  }
+  &__icon {
     display: none;
+    @include breakpoint-down(medium) {
+      cursor: pointer;
+      display: block;
+      align-self: flex-start;
+      margin-left: 10px;
+      img {
+        transform: scale(1.5);
+      }
+    }
   }
 
   &__left {
@@ -21,6 +40,9 @@
     align-items: center;
     cursor: pointer;
     margin-right: 170px;
+    @include breakpoint-down(medium) {
+      display: none;
+    }
     &--img {
       height: 30px;
       margin-right: 10px;
@@ -31,10 +53,16 @@
     display: flex;
     align-items: center;
     list-style: none;
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
   }
   &__item {
     margin-right: 50px;
     cursor: pointer;
+    @include breakpoint-down(medium) {
+      margin-top: 10px;
+    }
     &:hover {
       color: var(--secondary);
     }
