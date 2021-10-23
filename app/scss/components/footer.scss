@@ -1,3 +1,5 @@
+@use '../util' as *;
+
 .footer {
   background: white;
   width: 100vw;
@@ -7,8 +9,21 @@
   z-index: 100;
   position: relative;
   color: #1c1e2c;
+  @include breakpoint-down(small) {
+    grid-template-columns: 1fr;
+  }
+  &__left {
+    @include breakpoint-down(small) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+  }
   &__logo {
     width: 30%;
+    @include breakpoint-down(small) {
+      width: 90%;
+    }
     img {
       width: 100%;
     }
@@ -17,6 +32,9 @@
     margin-left: 70px;
     font-weight: 300;
     opacity: 0.9;
+    @include breakpoint-down(small) {
+      margin-left: 0;
+    }
   }
   &__center {
     display: flex;
@@ -26,6 +44,11 @@
       font-size: 24px;
       font-weight: 500;
       height: 68px;
+      @include breakpoint-down(small) {
+        height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+      }
     }
     &--links {
       opacity: 0.9;
@@ -39,6 +62,9 @@
       margin-left: 0;
       font-size: 16px;
       font-weight: 300;
+      @include breakpoint-down(small) {
+        text-align: center;
+      }
       a {
         color: #1c1e2c;
       }
