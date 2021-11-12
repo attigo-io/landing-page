@@ -1,0 +1,88 @@
+.form-container {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__body {
+    position: relative;
+    background-color: rgba($color: #1c1e2b, $alpha: 0.99);
+    width: 60%;
+    padding: 20px;
+  }
+  &__img {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  &__form {
+    margin-top: 350px;
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &--left {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 20px;
+      padding-left: 20px;
+      padding-top: 80px;
+    }
+    &--row1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    &--row3 {
+      display: grid;
+      grid-template-columns: 110px auto;
+      gap: 10px;
+    }
+    &--row4 {
+      display: grid;
+      grid-template-columns: 110px auto;
+      gap: 10px;
+    }
+    &--get-code-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    &--row5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-dark);
+    border-radius: 10px;
+    width: 100%;
+    &--get-code {
+      height: 36px;
+    }
+    &--send {
+      padding: 16px;
+      background: linear-gradient(
+        to left,
+        var(--gradiant-start),
+        var(--gradiant-end)
+      );
+    }
+  }
+}

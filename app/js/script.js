@@ -191,7 +191,21 @@ const animatePhone = () => {
 screen.width > 1055 ? animatePC() : animatePhone()
 
 
-const toggleMenu = () => {
+const toggleMenu  = () => {
 	const nav = document.getElementById('nav')
 	nav.classList.toggle('nav--open');
+}
+
+const getCode = async  () => {
+  const countryCode = document.getElementById('country_code').value
+  const phoneNumber = document.getElementById('phone_number').value
+  if(countryCode == '' || phoneNumber == '' ){
+    toastr.warning('Please Insert contry code and phone number to get code')
+    return
+  }
+  const { data } = await axios.post('http://localhost/authy/auth.php' , {
+    country_code : countryCode ,
+    phone_number : phoneNumber
+  })
+  console.log(data)
 }

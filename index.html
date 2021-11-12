@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yupa.io</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
 </head>
 
@@ -226,6 +227,67 @@
         </div>
       </section> -->
   </div>
+  <div class="form-container">
+    <div class="form-container__body">
+      <img class="form-container__img" src="/img/question.svg" alt="">
+      <div class="form-container__form">
+        <div class="form-container__form--left">
+          <div class="form-container__form--row1">
+            <div class="yupa-input">
+              <label for="name">Name</label>
+              <input type="text" name="name">
+            </div>
+            <div class="yupa-input">
+              <label for="name">Company Name</label>
+              <input type="text" name="name">
+            </div>
+          </div>
+          <div class="form-container__form--row2">
+            <div class="yupa-input">
+              <label for="name">Email address</label>
+              <input type="email" name="name">
+            </div>
+          </div>
+          <div class="form-container__form--row2">
+            <div class="yupa-input">
+              <label for="name">Request Body</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-container__form--right">
+          <div class="form-container__form--row3">
+            <div class="yupa-input">
+              <label for="country_code">Country Code</label>
+              <input type="text" name="country_code" id="country_code">
+            </div>
+            <div class="yupa-input">
+              <label for="phone_number">Number</label>
+              <input type="text" name="phone_number" id="phone_number">
+            </div>
+          </div>
+          <div class="form-container__form--row4">
+            <div class="yupa-input">
+              <label for="name">Code</label>
+              <input type="text" name="name">
+            </div>
+            <div class="form-container__form--get-code-container">
+              <div class="form-container__button form-container__button--get-code" onclick="getCode()">
+                Get Code
+              </div>
+            </div>
+          </div>
+          <div class="form-container__form--row5">
+            <div class="form-container__button form-container__button--send">
+              Send
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="footer__left">
       <div class="footer__logo">
@@ -260,11 +322,13 @@
 
     </div>
   </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script src="/script.js"></script>
 </body>
 
