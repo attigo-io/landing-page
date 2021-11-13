@@ -1,0 +1,9 @@
+{
+  "require": {
+    "authy/php": "^3.0",
+    "twilio/sdk": "^6.31",
+    "rakit/validation": "^1.4",
+    "phpmailer/phpmailer": "^6.5",
+    "damoclark/simple-cors": "^1.0"
+  }
+}
