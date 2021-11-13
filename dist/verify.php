@@ -14,6 +14,8 @@ require 'PHPMailer-master/src/SMTP.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
+require_once('secret.php');
+
 $validator = new Validator;
 
 // make it

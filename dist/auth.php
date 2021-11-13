@@ -12,6 +12,8 @@ header("Access-Control-Allow-Methods: POST, DELETE, OPTIONS");
 header("Access-Control-Max-Age: 3600");    
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"); 
 $validator = new Validator;
+require_once('secret.php');
+
 
 // make it
 $validation = $validator->make($_POST + $_FILES, [
@@ -36,8 +38,7 @@ if ($validation->fails()) {
 // Find your Account SID and Auth Token at twilio.com/console
 // and set the environment variables. See http://twil.io/secure
 
-$sid  = 'AC5c5f8371ac9194d59efa451f3999375e';
-$token = 'caf4cfe80e4e8b07626fa0afb2ccc64f';
+
 
 $twilio = new Client($sid, $token);
 $code = $_POST['country_code'];
