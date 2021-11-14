@@ -1,6 +1,6 @@
 .form-container {
   position: absolute;
-  top: 40px;
+  top: -300%;
   left: 0;
   right: 0;
   display: flex;
@@ -9,6 +9,7 @@
   &__body {
     position: relative;
     background-color: rgba($color: #1c1e2b, $alpha: 0.99);
+    border-radius: 10px;
     width: 60%;
     padding: 20px;
   }
@@ -73,6 +74,10 @@
     background-color: var(--button-dark);
     border-radius: 10px;
     width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-family: inherit;
     &--get-code {
       height: 36px;
     }

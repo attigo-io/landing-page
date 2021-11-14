@@ -48,8 +48,8 @@
           la Wasabi, Zeus, Blue Wallet, Wallet of Satoshi y la Chivo Wallet.
         </div>
         <div class="main__buttons">
-          <a class="button button--primary">Solicitar demo</a>
-          <a class="button button--secondary">Afiliar comercio</a>
+          <a class="button button--primary" onclick="openForm()">Solicitar demo</a>
+          <a class="button button--secondary" onclick="openForm()">Afiliar comercio</a>
         </div>
       </div>
       <div class="phone__img">
@@ -227,31 +227,31 @@
         </div>
       </section> -->
   </div>
-  <div class="form-container">
+  <div class="form-container" id="formcontainer">
     <div class="form-container__body">
       <img class="form-container__img" src="/img/question.svg" alt="">
       <div class="form-container__form">
         <div class="form-container__form--left">
           <div class="form-container__form--row1">
             <div class="yupa-input">
-              <label for="name">Name</label>
-              <input type="text" name="name">
+              <label for="name" >Name</label>
+              <input type="text" name="name"id="name">
             </div>
             <div class="yupa-input">
-              <label for="name">Company Name</label>
-              <input type="text" name="name">
-            </div>
-          </div>
-          <div class="form-container__form--row2">
-            <div class="yupa-input">
-              <label for="name">Email address</label>
-              <input type="email" name="name">
+              <label for="name" >Company Name</label>
+              <input type="text" name="name" id="company">
             </div>
           </div>
           <div class="form-container__form--row2">
             <div class="yupa-input">
-              <label for="name">Request Body</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <label for="name" >Email address</label>
+              <input type="email" name="name" id="email">
+            </div>
+          </div>
+          <div class="form-container__form--row2">
+            <div class="yupa-input">
+              <label for="name" >Request Body</label>
+              <textarea name="" id="" cols="30" rows="10" id="req" ></textarea>
             </div>
           </div>
         </div>
@@ -269,18 +269,18 @@
           <div class="form-container__form--row4">
             <div class="yupa-input">
               <label for="name">Code</label>
-              <input type="text" name="name">
+              <input type="text" name="name" id="code">
             </div>
             <div class="form-container__form--get-code-container">
-              <div class="form-container__button form-container__button--get-code" onclick="getCode()">
+              <button class="form-container__button form-container__button--get-code" onclick="getCode()">
                 Get Code
-              </div>
+              </button>
             </div>
           </div>
           <div class="form-container__form--row5">
-            <div class="form-container__button form-container__button--send">
+            <button disabled class="form-container__button form-container__button--send">
               Send
-            </div>
+            </button>
           </div>
 
         </div>
@@ -322,6 +322,8 @@
 
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/gh/yahoo/xss-filters@master/dist/xss-filters.js"></script>
+  <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src= "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>

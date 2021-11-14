@@ -12,8 +12,6 @@ header("Access-Control-Allow-Methods: POST, DELETE, OPTIONS");
 header("Access-Control-Max-Age: 3600");    
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"); 
 $validator = new Validator;
-require_once('secret.php');
-
 
 // make it
 $validation = $validator->make($_POST + $_FILES, [
@@ -38,6 +36,7 @@ if ($validation->fails()) {
 // Find your Account SID and Auth Token at twilio.com/console
 // and set the environment variables. See http://twil.io/secure
 
+require('secret.php');
 
 
 $twilio = new Client($sid, $token);
@@ -48,4 +47,4 @@ $verification = $twilio->verify->v2->services("VA1dec7d034f3907e3bfecdc22770b3e4
                                    ->verifications
                                    ->create("+$code$phone", "sms");
 
-print($verification->status);
+echo '{ "status" : 200 , "data" : { "msg" : "a verfication sms was sent to your number" } }';

@@ -203,9 +203,58 @@ const getCode = async  () => {
     toastr.warning('Please Insert contry code and phone number to get code')
     return
   }
-  const { data } = await axios.post('http://localhost/authy/auth.php' , {
+  const { data } = await axios.post('https://yupa.io/verify.php' , {
     country_code : countryCode ,
     phone_number : phoneNumber
   })
   console.log(data)
+}
+
+const openForm = () => {
+  gsap.to('#formcontainer' , {
+    top: 40
+  })
+}
+
+const sendForm = async () => {
+  const name = $('#name').val();
+  const company = $('#company').val();
+  const email =  $('#email').val();
+  const req = $('#email').val();
+  const code = $('#code').val()
+  const countryCode = document.getElementById('country_code').value
+  const phoneNumber = document.getElementById('phone_number').value
+  if(countryCode == '' || phoneNumber == '' ){
+    toastr.warning('Please Insert contry code and phone number to get code')
+    return
+  }
+  if(!validateForm()) {
+    toastr.warning('Please fill all info in the form')
+    return
+  }
+
+  const fd = new FormData()
+  fd.append('country_code' ,countryCode)
+  fd.append('phone_number' ,countryCode)
+  fd.append('code' ,code)
+  fd.append('name' ,name)
+  fd.append('company_name' ,company)
+  fd.append('email' ,email)
+  fd.append('request' ,req)
+  
+  try{
+    const { data } = axios.post('https://yupa.io/verify.php' , fd , {
+      
+    })
+  }catch(err){
+
+  }
+
+
+
+}
+
+const validateForm = () => {
+  if($('#name').val() == '' &&  $('#company').val() == '' && $('#email').val() == '' && $('#req').val() == '' && $('#code').val() == ''  ) return false;
+  return true ;
 }
