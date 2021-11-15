@@ -90,10 +90,14 @@ $mail->Subject = "Yupa.io request";
 $content = $table ;
 
 $mail->MsgHTML($content); 
+
+ob_clean();
+header('Content-Type: application/json; charset=utf-8');
+
+
 if(!$mail->Send()) {
-  echo "Error while sending Email.";
-  var_dump($mail);
+  echo '{ "status" : 500 , "data" : { "msg" : "an error accured" } }';
 } else {
-  echo "Email sent successfully";
+  echo '{ "status" : 200 , "data" : { "msg" : "succesfull" } }';
 }
 
