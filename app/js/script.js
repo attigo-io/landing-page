@@ -205,8 +205,9 @@ const getCode = async  () => {
   }
 
   const fd = new FormData();
-  fd.append('country_code' ,countryCode)
-  fd.append('phone_number' , phoneNumber)
+  fd.append('country_code' ,countryCode);
+  fd.append('phone_number' , phoneNumber);
+  $('.form-container__button--send').attr('disabled' , false);
   const { data } = await axios.post('https://yupa.io/auth.php' , fd , {
     headers : {
       'Content-Type': 'application/x-www-form-urlencoded',
@@ -249,7 +250,9 @@ const sendForm = async () => {
   
   try{
     const { data } = axios.post('https://yupa.io/verify.php' , fd , {
-      
+      headers : {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      }
     })
   }catch(err){
 
