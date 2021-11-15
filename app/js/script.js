@@ -236,7 +236,7 @@ const sendForm = async () => {
   const name = $('#name').val();
   const company = $('#company').val();
   const email =  $('#email').val();
-  const req = $('#req').val();
+  const req = $('.textareareq').val();
   const code = $('#code').val()
   const countryCode = document.getElementById('country_code').value
   const phoneNumber = document.getElementById('phone_number').value
