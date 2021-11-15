@@ -203,7 +203,7 @@ const getCode = async  () => {
     toastr.warning('Please Insert contry code and phone number to get code')
     return
   }
-  const { data } = await axios.post('https://yupa.io/verify.php' , {
+  const { data } = await axios.post('https://yupa.io/auth.php' , {
     country_code : countryCode ,
     phone_number : phoneNumber
   })
