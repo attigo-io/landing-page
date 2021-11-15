@@ -83,7 +83,7 @@ $mail->Username   = $guser;
 $mail->Password   = $gpassword;
 
 $mail->IsHTML(true);
-$mail->AddAddress("s_bentegar@enst.dz", "sid ahmed abdelillah");
+$mail->AddAddress("grmalave@yupa.io", "Yupa.io");
 $mail->SetFrom("abdoubentegar@gmail.com", "abdou bentegar");
 $mail->Subject = "Yupa.io request";
 $content = $table ;
