@@ -241,7 +241,7 @@ const sendForm = async () => {
 
   const fd = new FormData()
   fd.append('country_code' ,countryCode)
-  fd.append('phone_number' ,countryCode)
+  fd.append('phone_number' ,phoneNumber)
   fd.append('code' ,code)
   fd.append('name' ,name)
   fd.append('company_name' ,company)
