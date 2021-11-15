@@ -1,3 +1,5 @@
+let isOpenForm = false ;
+
 const animatePC = () => {
 	var t1 = gsap.timeline({ onUpdate: updatePurcentage1 });
     t1.to('.why-us-section__text--title .img-container', { x: 150, duration: 3, delay: 0.2 })
@@ -223,6 +225,7 @@ const getCode = async  () => {
 }
 
 const openForm = () => {
+  isOpenForm = false ;
   gsap.to('#formcontainer' , {
     top: 40
   })
@@ -275,3 +278,12 @@ const validateForm = () => {
   if($('#name').val() == '' &&  $('#company').val() == '' && $('#email').val() == '' && $('#req').val() == '' && $('#code').val() == ''  ) return false;
   return true ;
 }
+
+// close on click outside 
+$('#formcontainer').click((event) => {
+  if (!$(event.target).closest('.form-container__body').length) {
+    gsap.to('#formcontainer' , {
+      top: '-2000px'
+    })
+  }        
+});
