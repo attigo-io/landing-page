@@ -75,7 +75,6 @@ $mail->IsSMTP();
 $mail->Mailer = "smtp";
 
 
-$mail->SMTPDebug  = 1;  
 $mail->SMTPAuth   = TRUE;
 $mail->SMTPSecure = "tls";
 $mail->Port       = 587;
@@ -94,6 +93,7 @@ $mail->MsgHTML($content);
 
 
 $res = $mail->Send();
+
 ob_end_clean();
 header('Content-Type: application/json; charset=utf-8');
 
