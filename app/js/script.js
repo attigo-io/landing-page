@@ -229,6 +229,7 @@ const openForm = () => {
   gsap.to('#formcontainer' , {
     top: 40
   })
+  doToor()
 }
 
 const sendForm = async () => {
@@ -287,3 +288,41 @@ $('#formcontainer').click((event) => {
     })
   }        
 });
+
+
+
+const doToor = () => {
+introJs().setOptions({
+  steps: [{
+    title: 'Request a demo',
+    intro: 'Let us  guid you on how to request a demo'
+  },{
+    
+      element: document.querySelector('#country_code'),
+      intro: 'Enter your country code'
+    },
+    {
+    
+      element: document.querySelector('#phone_number'),
+      intro: 'Enter your phone number'
+    },
+    {
+    
+      element: document.querySelector('.form-container__button--get-code'),
+      intro: 'Click send to receive validation code on your phone'
+    },
+    {
+    
+      element: document.querySelector('#code'),
+      intro: 'Write the code you received here'
+    },{
+      element: document.querySelector('.form-container__form--left'),
+      intro: 'Fill the rest of the form'
+    }
+    ,{
+      element: document.querySelector('.form-container__button--send'),
+      intro: 'Click send to validate form'
+    }
+  ],
+  tooltipClass : 'mytooltip'
+}).start();}
