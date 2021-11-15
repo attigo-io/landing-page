@@ -11,7 +11,7 @@ $table = "
     </tr>
     <tr>
         <td>phone number : </td>
-        <td>$countryCode$phone_number </td>
+        <td>+$countryCode$phone </td>
     </tr>
 
     <tr>

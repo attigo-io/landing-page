@@ -53,7 +53,8 @@ $request = $_POST["request"];
 require('table.php');
 
 
-
+echo $table ;
+exit ;
 
 
 $verification_check = $twilio->verify->v2->services("VA1dec7d034f3907e3bfecdc22770b3e48")
