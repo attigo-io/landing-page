@@ -91,7 +91,7 @@ $content = $table ;
 
 $mail->MsgHTML($content); 
 
-
+echo "here";
 
 if(!$mail->Send()) {
   ob_clean();
