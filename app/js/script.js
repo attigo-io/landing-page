@@ -203,9 +203,14 @@ const getCode = async  () => {
     toastr.warning('Please Insert contry code and phone number to get code')
     return
   }
-  const { data } = await axios.post('https://yupa.io/auth.php' , {
-    country_code : countryCode ,
-    phone_number : phoneNumber
+
+  const fd = new FormData();
+  fd.append('country_code' ,countryCode)
+  fd.append('phone_number' , phoneNumber)
+  const { data } = await axios.post('https://yupa.io/auth.php' , fd , {
+    headers : {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    }
   })
   console.log(data)
 }
