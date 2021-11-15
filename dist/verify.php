@@ -93,13 +93,13 @@ $mail->MsgHTML($content);
 
 
 
-if(!$mail->Send()) {
-  ob_end_clean();
-  header('Content-Type: application/json; charset=utf-8');
+$res = $mail->Send();
+ob_end_clean();
+header('Content-Type: application/json; charset=utf-8');
+
+if(!$res) {
   echo '{ "status" : 500 , "data" : { "msg" : "an error accured" } }';
 } else {
-  ob_end_clean();
-  header('Content-Type: application/json; charset=utf-8');
   echo '{ "status" : 200 , "data" : { "msg" : "succesfull" } }';
 }
 
