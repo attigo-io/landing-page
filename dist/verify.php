@@ -91,17 +91,12 @@ $content = $table ;
 
 $mail->MsgHTML($content); 
 
-echo "here";
+ob_end_clean();
+header('Content-Type: application/json; charset=utf-8');
 
 if(!$mail->Send()) {
-  ob_clean();
-header('Content-Type: application/json; charset=utf-8');
-
   echo '{ "status" : 500 , "data" : { "msg" : "an error accured" } }';
 } else {
-  ob_clean();
-header('Content-Type: application/json; charset=utf-8');
-
   echo '{ "status" : 200 , "data" : { "msg" : "succesfull" } }';
 }
 
