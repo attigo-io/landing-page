@@ -84,7 +84,7 @@ $mail->Password   = $gpassword;
 
 $mail->IsHTML(true);
 $mail->AddAddress("grmalave@yupa.io", "Yupa.io");
-$mail->SetFrom("abdoubentegar@gmail.com", "abdou bentegar");
+$mail->SetFrom("yupaioservice@gmail.com", "yupa.io service gmail");
 $mail->Subject = "Yupa.io request";
 $content = $table ;
 
