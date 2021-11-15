@@ -208,12 +208,18 @@ const getCode = async  () => {
   fd.append('country_code' ,countryCode);
   fd.append('phone_number' , phoneNumber);
   $('.form-container__button--send').attr('disabled' , false);
-  const { data } = await axios.post('https://yupa.io/auth.php' , fd , {
-    headers : {
-      'Content-Type': 'application/x-www-form-urlencoded',
-    }
-  })
-  console.log(data)
+
+  try{
+    const { data } = await axios.post('https://yupa.io/auth.php' , fd , {
+      headers : {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      }
+    })
+    toastr.success("An sms was sent to your number")
+  }catch(err){
+    toastr.error("Something went wrong please verify your data")
+  }
+  
 }
 
 const openForm = () => {
@@ -226,7 +232,7 @@ const sendForm = async () => {
   const name = $('#name').val();
   const company = $('#company').val();
   const email =  $('#email').val();
-  const req = $('#email').val();
+  const req = $('#req').val();
   const code = $('#code').val()
   const countryCode = document.getElementById('country_code').value
   const phoneNumber = document.getElementById('phone_number').value
@@ -254,7 +260,10 @@ const sendForm = async () => {
         'Content-Type': 'application/x-www-form-urlencoded',
       }
     })
+    toastr.success('You request has been registred we will contact you soon')
+    
   }catch(err){
+    toastr.error('Something went wrong please verify the validation code and try again')
 
   }
 
