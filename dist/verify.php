@@ -80,8 +80,8 @@ $mail->SMTPAuth   = TRUE;
 $mail->SMTPSecure = "tls";
 $mail->Port       = 587;
 $mail->Host       = "smtp.gmail.com";
-$mail->Username   = "abdoubentegar@gmail.com";
-$mail->Password   = "THE1201panda2000";
+$mail->Username   = $guser;
+$mail->Password   = $gpassword;
 
 $mail->IsHTML(true);
 $mail->AddAddress("s_bentegar@enst.dz", "sid ahmed abdelillah");
