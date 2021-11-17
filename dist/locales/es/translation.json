@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Home",
+    "function": "Functions",
+    "contact": "Contact Us",
+    "clients": "Clients"
+  },
+  "main": {
+    "subtitle": "Instant Bitcoin Payments.",
+    "text": "Plataforma para empresas mediante la cual podran recibir sus pagos en Bitcoin, compatible con billeteras existentes en el mercado como: la Wasabi, Zeus, Blue Wallet, Wallet of Satoshi y la Chivo Wallet.",
+    "buttons": {
+      "primary": "Request demo",
+      "secondary": "Affiliate trade"
+    }
+  },
+  "whyUs": {
+    "subtitle": "Looking to Upgrade your buisness to crypto",
+    "title": "Why",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis similique deserunt aliquam tenetur, cum enim animi ut ea beatae unde consequatur, voluptates non porro, ex eum tempore doloremque explicabo.",
+    "cards": {
+      "card1": {
+        "title": "Qr Ready",
+        "text": "Qr Ready for fast Transactions with a quick scan"
+      },
+      "card2": {
+        "title": "Lightening",
+        "text": "Lightening fast Instant transaction using the lightening Level 2 network"
+      },
+      "card3": {
+        "title": "Point Of Sale",
+        "text": "Point Of Sale Access for quick Crypto payment transactions"
+      },
+      "card4": {
+        "title": "Fiat Support",
+        "text": "Out of the box support for fiat money"
+      },
+      "card5": {
+        "title": "BTC / USD",
+        "text": "Freedom of exchange between USD / BTC at anytime"
+      },
+      "card6": {
+        "title": "Secure",
+        "text": "Bee worry free over your funds whith our worlds class security"
+      },
+      "card7": {
+        "title": "Multi device support",
+        "text": "Access every where with our webApp with PWA enabled"
+      }
+    }
+  },
+  "upgrade": {
+    "upgrade": "Upgrade to",
+    "trial": "Free trial"
+  },
+  "footer": {
+    "text": "Yupa is the next generation blazing fast crypto payment / exchange platform For more information please contact us bla bla write something in spanish here",
+    "links": "links",
+    "aboutUs": "ABOUT US",
+    "contactUs": "Contact Us"
+  },
+  "trialForm": {
+    "title": "Contact Us",
+    "form": {
+      "name": "Name",
+      "companyName": "Company Name",
+      "emailAddress": "Email Address",
+      "requestBody": "Request Body",
+      "countryCode": "Country Code",
+      "number": "Phone Number",
+      "code": "Code",
+      "getCode": "Get Code",
+      "send": "Send Request"
+    }
+  }
+}

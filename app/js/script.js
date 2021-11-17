@@ -225,8 +225,58 @@ const getCode = async  () => {
 }
 
 
+var en = (function() {
+  var json = null;
+  $.ajax({
+    'async': false,
+    'global': false,
+    'url': "/locales/en/translation.json",
+    'dataType': "json",
+    'success': function(data) {
+      json = data;
+    }
+  });
+  return json;
+})();
+
+var es = (function() {
+  var json = null;
+  $.ajax({
+    'async': false,
+    'global': false,
+    'url': "/locales/es/translation.json",
+    'dataType': "json",
+    'success': function(data) {
+      json = data;
+    }
+  });
+  return json;
+})();
 
 
 
+i18next.init({
+  lng: 'en', // evtl. use language-detector https://github.com/i18next/i18next-browser-languageDetector
+  resources: {
+    en: {
+      translation: en
+    },
+    es: {
+      translation: es
+    }
+  }
+}, function(err, t) {
+  // for options see
+  // https://github.com/i18next/jquery-i18next#initialize-the-plugin
+  jqueryI18next.init(i18next, $);
 
+  // start localizing, details:
+  // https://github.com/i18next/jquery-i18next#usage-of-selector-function
+  $('body').localize();
+});
 
+const changeLanguage = (lang) => {
+  i18next.changeLanguage(lang, function() {
+    $('body').localize();
+  });
+}
