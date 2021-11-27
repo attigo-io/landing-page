@@ -18,6 +18,12 @@
       width: 80%;
     }
   }
+  &__exit {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
   &__img {
     width: 100%;
     position: absolute;

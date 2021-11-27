@@ -63,6 +63,12 @@ const openForm = () => {
     }        
   });
 
+  const closeForm = () => {
+    gsap.to('#formcontainer' , {
+      top: '-2000px'
+    })
+  }
+
   const doToor = () => {
     introJs().setOptions({
       steps: [{
