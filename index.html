@@ -18,20 +18,36 @@
         <img src="img/icons/menu.svg" alt="" id="menu" onclick="toggleMenu()">
       </div>
       <div class="nav__left">
-        <div class="nav__logo">
-          <img
+        <div class="nav__lang">
+          <div class="nav__lang--selected" id="nav__lang--selected" onclick="openLangList()">
+            <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/750px-Bandera_de_Espa%C3%B1a.svg.png"
-            alt="" class="nav__logo--img" />
-          <div class="nav__logo--text">Idioma</div>
+            alt="" class="nav__lang--img" id="nav__lang--img" />
+            <div class="nav__lang--text" id="nav__lang--text">Idioma</div>
+          </div>
+          <ul class="nav__lang-list nav__lang-list--close" id="nav__lang-list">
+            <li class="nav__lang-list-item" onclick="changeLanguage('es')">
+              <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/750px-Bandera_de_Espa%C3%B1a.svg.png"
+              alt="" class="nav__lang--img" />
+              <div class="nav__lang--text">Español </div>
+            </li>
+            <li class="nav__lang-list-item" onclick="changeLanguage('en')">
+              <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/220px-Flag_of_the_United_States.svg.png"
+              alt="" class="nav__lang--img" />
+              <div class="nav__lang--text">English</div>
+            </li>
+          </ul>
         </div>
         <ul class="nav__items">
           <li class="nav__item nav__item--active" data-i18n="nav.home"></li>
-          <li class="nav__item" data-i18n="nav.function">Funciones</li>
-          <li class="nav__item" data-i18n="nav.contact">Contáctenos</li>
+          <li class="nav__item" data-i18n="nav.function" onclick="sctrollTo('#why-us')">Funciones</li>
+          <li class="nav__item" data-i18n="nav.contact" onclick="openForm()">Contáctenos</li>
         </ul>
       </div>
       <div class="nav__right">
-        <a class="button button--primary" data-i18n="nav.clients">Clientes</a>
+        <a class="button button--primary" target="__blank" data-i18n="nav.clients" href="//app.yupa.io">Clientes</a>
       </div>
     </nav>
     <section class="hero-section">
@@ -57,7 +73,7 @@
         <img src="img/phone.png" alt="" />
       </div>
     </section>
-    <section class="why-us-section">
+    <section class="why-us-section" id="why-us">
       <div class="why-us-section__underlay">
         <img src="img/union5.svg" />
       </div>
@@ -308,6 +324,8 @@
   <script src="/toastr.min.js"></script>
   <script src="/script.js"></script>
   <script src="/form.js"></script>
+  <script src="/language.js"></script>
+
 
 
 </body>

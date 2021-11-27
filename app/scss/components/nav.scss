@@ -35,18 +35,53 @@
     align-items: center;
   }
 
-  &__logo {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  &__lang {
+    position: relative;
     margin-right: 170px;
     @include breakpoint-down(medium) {
       display: none;
     }
+    &--selected {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      padding: 20px;
+      &--close {
+        opacity: 0;
+      }
+    }
     &--img {
       height: 30px;
+      width: 45px;
       margin-right: 10px;
     }
+    &--text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__lang-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+    height: 0px;
+    border-radius: 5px;
+    background-color: #10121c;
+    &--close {
+      height: 0;
+      padding: 0;
+    }
+  }
+  &__lang-list-item {
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 10px;
   }
 
   &__items {
