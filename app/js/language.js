@@ -26,9 +26,11 @@ const es = (function () {
   return json;
 })();
 
+i18next.use(i18nextBrowserLanguageDetector)
+
 i18next.init(
   {
-    lng: 'en', // evtl. use language-detector https://github.com/i18next/i18next-browser-languageDetector
+    lng: 'es', // evtl. use language-detector 
     resources: {
       en: {
         translation: en,
