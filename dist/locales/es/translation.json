@@ -1,75 +1,76 @@
 {
   "nav": {
-    "home": "Home",
-    "function": "Functions",
-    "contact": "Contact Us",
-    "clients": "Clients"
+    "home": "Inicio",
+    "function": "Características",
+    "contact": "Contacto",
+    "clients": "Login"
   },
   "main": {
-    "subtitle": "Instant Bitcoin Payments.",
-    "text": "Plataforma para empresas mediante la cual podran recibir sus pagos en Bitcoin, compatible con billeteras existentes en el mercado como: la Wasabi, Zeus, Blue Wallet, Wallet of Satoshi y la Chivo Wallet.",
+    "subtitle": "Reciba Pagos Instantáneos en Bitcoin.",
+    "text": "No permita que nuevos clientes se vayan por no aceptar bitcoins, ofrecemos una plataforma empresarial independiente para cobros y pagos inmediatos en Bitcoin compatible con billeteras de la red Lightning del mercado como." 
     "buttons": {
-      "primary": "Request demo",
-      "secondary": "Affiliate trade"
+      "primary": "Solicitar demostración",
+      "secondary": "Afilie comercio"
     }
   },
   "whyUs": {
-    "subtitle": "Looking to Upgrade your buisness to crypto",
-    "title": "Why",
-    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis similique deserunt aliquam tenetur, cum enim animi ut ea beatae unde consequatur, voluptates non porro, ex eum tempore doloremque explicabo.",
+    "subtitle": "Buscando actualizar su negocio a cripto",
+    "title": "¿Por qué?",
+    "text": "Las empresas sin adecuación tecnológica no podrán generar valor a los ciudadanos."
+.",
     "cards": {
       "card1": {
-        "title": "Qr Ready",
-        "text": "Qr Ready for fast Transactions with a quick scan"
+        "title": "QR Ready",
+        "text": "Código QR para transacciones para escaneo rápido."
       },
       "card2": {
-        "title": "Lightning",
-        "text": "Lightening fast Instant transaction using the lightening Level 2 network"
+        "title": "Red Lightning",
+        "text": "Transacción instantánea ultrarrápida utilizando la red Lightning Level 2"
       },
       "card3": {
-        "title": "Point Of Sale",
-        "text": "Point Of Sale Access for quick Crypto payment transactions"
+        "title": "Punto de venta",
+        "text": "Acceso al punto de venta para transacciones rápidas de pago criptográfico"
       },
       "card4": {
-        "title": "Fiat Support",
-        "text": "Out of the box support for fiat money"
+        "title": "Soporte doney fiat",
+        "text": "Soporte listo para usar dinero fiduciario"
       },
       "card5": {
         "title": "BTC / USD",
-        "text": "Freedom of exchange between USD / BTC at anytime"
+        "text": "Libertad de intercambio entre USD / BTC en cualquier momento"
       },
       "card6": {
-        "title": "Secure",
-        "text": "Bee worry free over your funds whith our worlds class security"
+        "title": "Secura",
+        "text": "No se preocupe por sus fondos con nuestra seguridad de clase mundial"
       },
       "card7": {
-        "title": "Multi device support",
-        "text": "Access every where with our webApp with PWA enabled"
+        "title": "Soporte para múltiples dispositivos",
+        "text": "Acceda desde cualquier lugar con su aplicación web con PWA habilitado"
       }
     }
   },
   "upgrade": {
-    "upgrade": "Upgrade to",
-    "trial": "Free trial"
+    "upgrade": "Suscripción",
+    "trial": "Prueba gratis"
   },
   "footer": {
-    "text": "Yupa is the next generation blazing fast crypto payment / exchange platform For more information please contact us bla bla write something in spanish here",
-    "links": "links",
-    "aboutUs": "ABOUT US",
-    "contactUs": "Contact Us"
+    "text": "Yupa es la plataforma de intercambio / pago de criptografía ultrarrápida de próxima generación. Para obtener más información, comuníquese con nosotros.",
+    "links": "Enlaces",
+    "aboutUs": "Nosotros",
+    "contactUs": "Contacto"
   },
   "trialForm": {
-    "title": "Contact Us",
+    "title": "Contacto",
     "form": {
-      "name": "Name",
-      "companyName": "Company Name",
-      "emailAddress": "Email Address",
-      "requestBody": "Request Body",
-      "countryCode": "Country Code",
-      "number": "Phone Number",
-      "code": "Code",
-      "getCode": "Get Code",
-      "send": "Send Request"
+      "name": "Nombre",
+      "companyName": "Empresa",
+      "emailAddress": "Email",
+      "requestBody": "Solicitud",
+      "countryCode": "Código de país",
+      "number": "Número de teléfono",
+      "code": "Código",
+      "getCode": "Obtener código",
+      "send": "Enviar petición"
     }
   }
 }
