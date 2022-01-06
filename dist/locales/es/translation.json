@@ -7,17 +7,16 @@
   },
   "main": {
     "subtitle": "Reciba Pagos Instantáneos en Bitcoin.",
-    "text": "No permita que nuevos clientes se vayan por no aceptar bitcoins, ofrecemos una plataforma empresarial independiente para cobros y pagos inmediatos en Bitcoin compatible con billeteras de la red Lightning del mercado como." 
+    "text": "No permita que nuevos clientes se vayan por no aceptar bitcoins, ofrecemos una plataforma empresarial independiente para cobros y pagos inmediatos en Bitcoin compatible con billeteras de la red Lightning del mercado como." ,
     "buttons": {
-      "primary": "Solicitar demostración",
+      "primary": "Solicitar demo",
       "secondary": "Afilie comercio"
     }
   },
   "whyUs": {
     "subtitle": "Buscando actualizar su negocio a cripto",
     "title": "¿Por qué?",
-    "text": "Las empresas sin adecuación tecnológica no podrán generar valor a los ciudadanos."
-.",
+    "text": "Las empresas sin adecuación tecnológica no podrán generar valor a los ciudadanos.",
     "cards": {
       "card1": {
         "title": "QR Ready",
