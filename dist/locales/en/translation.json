@@ -1,29 +1,29 @@
 {
   "nav": {
     "home": "Home",
-    "function": "Functions",
+    "function": "Features",
     "contact": "Contact Us",
-    "clients": "Clients"
+    "clients": "Login"
   },
   "main": {
-    "subtitle": "Instant Bitcoin Payments.",
-    "text": "Platform for companies through which they can receive their payments in Bitcoin, compatible with existing wallets on the market such as: the Wasabi, Zeus, Blue Wallet, Wallet of Satoshi and the Chivo Wallet. ",
+    "subtitle": "Receive Instant Payments in Bitcoin.",
+    "text": "Don't let new customers leave for not accepting bitcoins, we offer an independent business platform for immediate collections and payments in Bitcoin compatible with Lightning network wallets on the market.",
     "buttons": {
       "primary": "Request demo",
-      "secondary": "Affiliate trade"
+      "secondary": "Affiliate your business"
     }
   },
   "whyUs": {
     "subtitle": "Looking to Upgrade your buisness to crypto",
     "title": "Why",
-    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis similique deserunt aliquam tenetur, cum enim animi ut ea beatae unde consequatur, voluptates non porro, ex eum tempore doloremque explicabo.",
+    "text": "Companies without technological adaptation will not be able to generate value for citizens.",
     "cards": {
       "card1": {
-        "title": "Qr Ready",
-        "text": "Qr Ready for fast Transactions with a quick scan"
+        "title": "QR Ready",
+        "text": "QR Ready for fast Transactions with a quick scan"
       },
       "card2": {
-        "title": "Lightning",
+        "title": "Lightning Network",
         "text": "Lightening fast Instant transaction using the lightening Level 2 network"
       },
       "card3": {
@@ -40,7 +40,7 @@
       },
       "card6": {
         "title": "Secure",
-        "text": "Bee worry free over your funds whith our worlds class security"
+        "text": "Don't worry about your funds with our world-class security"
       },
       "card7": {
         "title": "Multi device support",
@@ -53,9 +53,9 @@
     "trial": "Free trial"
   },
   "footer": {
-    "text": "Yupa is the next generation blazing fast crypto payment / exchange platform For more information please contact us bla bla write something in spanish here",
-    "links": "links",
-    "aboutUs": "ABOUT US",
+    "text": "Yupa is the next generation ultra-fast crypto exchange / payment platform. For more information, please contact us.",
+    "links": "Links",
+    "aboutUs": "About Us",
     "contactUs": "Contact Us"
   },
   "trialForm": {
