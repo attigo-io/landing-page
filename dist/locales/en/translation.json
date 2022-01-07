@@ -6,6 +6,7 @@
     "clients": "Login"
   },
   "main": {
+
     "subtitle": "Receive Instant Payments in Bitcoin.",
     "text": "Don't let new customers leave for not accepting bitcoins, we offer an independent business platform for immediate collections and payments in Bitcoin compatible with Lightning network wallets on the market.",
     "buttons": {

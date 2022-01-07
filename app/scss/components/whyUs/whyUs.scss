@@ -40,15 +40,16 @@
       width: 300px;
       margin: auto;
       .img-container {
-        height: 70px;
-        width: 140px;
+        height: 100%;
+        width: 100%;
         position: absolute;
         left: 130px;
         background: #10121c;
         display: flex;
         align-items: center;
         img {
-          height: 70%;
+          height: 49px;
+          margin-left: 10px;
           transform: rotate(-90deg);
         }
       }
@@ -58,6 +59,9 @@
         font-weight: bold;
         font-size: 52px;
         margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
     &--text {
