@@ -1,16 +1,17 @@
 {
   "nav": {
     "home": "Home",
-    "function": "Functions",
+    "function": "Features",
     "contact": "Contact Us",
-    "clients": "Clients"
+    "clients": "Login"
   },
   "main": {
-    "subtitle": "Instant Bitcoin Payments.",
-    "text": "Do not let new customers leave for not accepting bitcoins, we offer an independent business platform for immediate collections and payments in Bitcoin compatible with wallets of the Lightning network of the market . ",
+
+    "subtitle": "Receive Instant Payments in Bitcoin.",
+    "text": "Don't let new customers leave for not accepting bitcoins, we offer an independent business platform for immediate collections and payments in Bitcoin compatible with Lightning network wallets on the market.",
     "buttons": {
       "primary": "Request demo",
-      "secondary": "Affiliate trade"
+      "secondary": "Affiliate your business"
     }
   },
   "whyUs": {
@@ -19,11 +20,11 @@
     "text": "Companies without technological adaptation will not be able to generate value for citizens.",
     "cards": {
       "card1": {
-        "title": "Qr Ready",
-        "text": "Qr Ready for fast Transactions with a quick scan"
+        "title": "QR Ready",
+        "text": "QR Ready for fast Transactions with a quick scan"
       },
       "card2": {
-        "title": "Lightning",
+        "title": "Lightning Network",
         "text": "Lightening fast Instant transaction using the lightening Level 2 network"
       },
       "card3": {
@@ -40,7 +41,7 @@
       },
       "card6": {
         "title": "Secure",
-        "text": "Bee worry free over your funds whith our worlds class security"
+        "text": "Don't worry about your funds with our world-class security"
       },
       "card7": {
         "title": "Multi device support",
@@ -53,9 +54,9 @@
     "trial": "Free trial"
   },
   "footer": {
-    "text": "Yupa is the next generation ultra-fast crypto exchange / payment platform. For more information, please contact us. ",
-    "links": "links",
-    "aboutUs": "ABOUT US",
+    "text": "Yupa is the next generation ultra-fast crypto exchange / payment platform. For more information, please contact us.",
+    "links": "Links",
+    "aboutUs": "About Us",
     "contactUs": "Contact Us"
   },
   "trialForm": {
