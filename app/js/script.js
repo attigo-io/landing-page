@@ -2,7 +2,7 @@ let isOpenForm = false ;
 
 const animatePC = () => {
 	var t1 = gsap.timeline({ onUpdate: updatePurcentage1 });
-    t1.to('.why-us-section__text--title .img-container', { x: 150, duration: 3, delay: 0.2 })
+    t1.to('.why-us-section__text--title .img-container', { x: 170, duration: 3, delay: 0.2 })
     t1.to('.why-us-section__text--title .img-container img', {
       rotate: 0
     })
@@ -100,7 +100,7 @@ const animatePC = () => {
 
 const animatePhone = () => {
 	var t1 = gsap.timeline({ onUpdate: updatePurcentage1 });
-    t1.to('.why-us-section__text--title .img-container', { x: 150, duration: 3, delay: 0.2 })
+    t1.to('.why-us-section__text--title .img-container', { x: 170,  duration: 3, delay: 0.2 })
     t1.to('.why-us-section__text--title .img-container img', {
       rotate: 0
     })
