@@ -4,7 +4,7 @@
     position: absolute;
     z-index: 10;
     width: 70%;
-    top: 120px;
+    top: 170px;
     right: 10px;
     @include breakpoint-down(medium) {
       display: none;
